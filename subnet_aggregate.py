@@ -3,7 +3,7 @@ from netaddr import IPAddress,IPNetwork,cidr_merge
 import os.path
 def subnet_aggregate(ip_file):
     listIP = []
-    f = open(ip_file)
+    f = open(ip_file,encoding='UTF-8-sig')
     for each in f:
         if each.isspace():
             continue
