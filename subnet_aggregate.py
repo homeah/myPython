@@ -8,6 +8,7 @@ def subnet_aggregate(ip_file):
         if each.isspace():
             continue
         listIP.append(IPNetwork(each))
+    f.close()
     temp_list = cidr_merge(listIP)
     for each in temp_list:
         print(each)
